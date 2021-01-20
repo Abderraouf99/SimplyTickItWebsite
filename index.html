@@ -1,10 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="styles/Styles.css" />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/4ccf67d97d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Assistant</title>
+  </head>
+
+  <body>
+    <section id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light"
+          style="background-color: #f4f3f3"
+        >
+          <a class="navbar-brand" href="">
+            <img class="app-icon" src="images/appIcon.png" alt="app-icon" />
+            Assistant
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navBarDrop"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navBarDrop">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Title -->
+        <div class="row title-row">
+          <div class="col-md-6">
+            <h1 class="title-text">
+              Meet assistant a simple and easy to use To-Do application and much
+              more.
+            </h1>
+            <button type="button" class="btn btn-dark btn-lg download-btn">
+              <i class="fab fa-google-play"></i> Coming soon
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-dark btn-lg download-btn"
+            >
+              <i class="fab fa-github"></i>
+              See the repo
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="phone-img"
+              src="images/welcomeScreen.png"
+              alt="app-mockup"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section id="features">
+      <div class="row feature-row">
+        <div class="col-md-4">
+          <i class="fas fa-tasks icon"></i>
+          <h3 class="feature-title">Add tasks</h3>
+          <img
+            class="feature-phone"
+            src="images/taskScreen.png"
+            alt="task-screen"
+          />
+          <p class="feature-description">
+            Add your tasks and enjoy ticking them
+          </p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-calendar-week icon"></i>
+          <h3 class="feature-title">Get reminded about events</h3>
+          <img class="feature-phone" src="images/event screen.png" alt="" />
+          <p class="feature-description">
+            Add your events and be reminded when the time comes
+          </p>
+        </div>
+        <div class="col-md-4">
+          <i class="far fa-sticky-note icon"></i>
+          <h3 class="feature-title">Save your notes</h3>
+          <img class="feature-phone" src="images/NoteScreen.png" alt="" />
+          <p class="feature-description">
+            Add notes to the app and have right in your pocket when you need
+            them
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact-me">
+      <h3 class="contact-me-header">Contact me</h3>
+      <p class="contact-me-txt">
+        If you like the app feel free to let me know, also if there is something
+        you don't like definitely shoot me an email and i will do my best to
+        correct it
+      </p>
+      <div class="container buttons">
+        <button type="button" class="btn btn-light btn-lg email-btn">
+          <i class="fas fa-inbox contact-me-btn"></i> Email
+        </button>
+
+        <button type="button" class="btn btn-primary btn-lg">
+          <i class="fab fa-twitter contact-me-btn"></i> Twitter
+        </button>
+      </div>
+      <footer id="footer">
+        <p>© Copyright 2021 Assistant</p>
+      </footer>
+    </section>
+  </body>
 </html>
