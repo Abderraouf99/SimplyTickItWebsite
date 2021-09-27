@@ -1,140 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BootStrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="styles/Styles.css" />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/4ccf67d97d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Assistant</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap"
-    rel="stylesheet" />
-  <!-- BootStrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
-  <!-- Personal CSS -->
-  <link rel="stylesheet" href="styles/Styles.css" />
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/4ccf67d97d.js" crossorigin="anonymous"></script>
-  <title>Assistant</title>
-</head>
-
-<body>
-  <section id="title">
-    <div class="container-fluid">
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f4f3f3">
-        <a class="navbar-brand" href="">
-          <img class="app-icon" src="images/appIcon.png" alt="app-icon" />
-          Assistant
-        </a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navBarDrop"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navBarDrop">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#title">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact-me">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Title -->
-      <div class="row title-row">
-        <div class="col-lg-6">
-          <h1 class="title-text">
-            Meet assistant a simple and easy to use To-Do application and much
-            more.
-          </h1>
-          <a class="btn btn-dark btn-lg download-btn" href="https://play.google.com/store/apps/details?id=com.abderraouf.studentcompanion">
-            <i class="fab fa-google-play"></i> Google Play Store
+  <body>
+    <section id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light"
+          style="background-color: #f4f3f3"
+        >
+          <a class="navbar-brand" href="">
+            <img class="app-icon" src="images/appIcon.png" alt="app-icon" />
+            Assistant
           </a>
-
-          <a class="btn btn-outline-dark btn-lg download-btn" href="https://github.com/Abderraouf99/Assistant"> <i
-              class="fab fa-github"></i> See repository
-          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navBarDrop"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-        <div class="col-lg-6">
-          <img class="phone-img" src="images/welcomeScreen.png" alt="app-mockup" />
+
+          <div class="collapse navbar-collapse" id="navBarDrop">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#title">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact-me">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Title -->
+        <div class="row title-row">
+          <div class="col-lg-6">
+            <h1 class="title-text">
+              Meet assistant a simple and easy to use To-Do application and much
+              more.
+            </h1>
+            <a
+              class="btn btn-dark btn-lg download-btn"
+              href="https://play.google.com/store/apps/details?id=com.abderraouf.studentcompanion"
+            >
+              <i class="fab fa-google-play"></i> Google Play Store
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="phone-img"
+              src="images/welcomeScreen.png"
+              alt="app-mockup"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Features -->
+    <!-- Features -->
 
-  <section id="features">
-    <div class="row feature-row">
-      <div class="col-lg-4">
-        <div class="icon-text-hover">
-          <i class="fas fa-tasks icon"></i>
-          <h3 class="feature-title">Add tasks</h3>
+    <section id="features">
+      <div class="row feature-row">
+        <div class="col-lg-4">
+          <div class="icon-text-hover">
+            <i class="fas fa-tasks icon"></i>
+            <h3 class="feature-title">Add tasks</h3>
+          </div>
+          <img
+            class="feature-phone"
+            src="images/taskScreen.png"
+            alt="task-screen"
+          />
+          <p class="feature-description">
+            Add your tasks and enjoy ticking them
+          </p>
         </div>
-        <img class="feature-phone" src="images/taskScreen.png" alt="task-screen" />
-        <p class="feature-description">
-          Add your tasks and enjoy ticking them
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <div class="icon-text-hover">
-          <i class="fas fa-calendar-week icon"></i>
-          <h3 class="feature-title">Get reminded about events</h3>
+        <div class="col-lg-4">
+          <div class="icon-text-hover">
+            <i class="fas fa-calendar-week icon"></i>
+            <h3 class="feature-title">Get reminded about events</h3>
+          </div>
+          <img class="feature-phone" src="images/eventScreen.png" alt="" />
+          <p class="feature-description">
+            Add your events and be reminded when the time comes
+          </p>
         </div>
-        <img class="feature-phone" src="images/eventScreen.png" alt="" />
-        <p class="feature-description">
-          Add your events and be reminded when the time comes
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <div class="icon-text-hover">
-          <i class="far fa-sticky-note icon"></i>
-          <h3 class="feature-title">Save your notes</h3>
+        <div class="col-lg-4">
+          <div class="icon-text-hover">
+            <i class="far fa-sticky-note icon"></i>
+            <h3 class="feature-title">Save your notes</h3>
+          </div>
+          <img class="feature-phone" src="images/NoteScreen.png" alt="" />
+          <p class="feature-description">
+            Add notes to the app and have right in your pocket when you need
+            them
+          </p>
         </div>
-        <img class="feature-phone" src="images/NoteScreen.png" alt="" />
-        <p class="feature-description">
-          Add notes to the app and have right in your pocket when you need
-          them
-        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="Contact-me">
-    <h3 class="contact-me-header">Contact me</h3>
-    <p class="contact-me-txt">
-      If you like the app feel free to let me know, also if there is something
-      you don't like definitely shoot me an email and i will do my best to
-      correct it
-    </p>
-    <div class="container buttons">
-      <a class="btn btn-light btn-lg email-btn" href="mailto:abderraoufbenchoubane@gmail.com">
-        <i class="fas fa-inbox contact-me-btn"></i> Email
-      </a>
+    <section id="Contact-me">
+      <h3 class="contact-me-header">Contact me</h3>
+      <p class="contact-me-txt">
+        If you like the app feel free to let me know, also if there is something
+        you don't like definitely shoot me an email and i will do my best to
+        correct it
+      </p>
+      <div class="container buttons">
+        <a
+          class="btn btn-light btn-lg email-btn"
+          href="mailto:abderraoufbenchoubane@gmail.com"
+        >
+          <i class="fas fa-inbox contact-me-btn"></i> Email
+        </a>
 
-      <a class="btn btn-primary btn-lg" href="https://twitter.com/AbderraoufBenc2">
-        <i class="fab fa-twitter contact-me-btn"></i> Twitter
-      </a>
-    </div>
-  </section>
-  <footer id="footer">
-    <p>© Copyright 2021 Assistant</p>
-  </footer>
-</body>
-
+        <a
+          class="btn btn-primary btn-lg"
+          href="https://twitter.com/AbderraoufBenc2"
+        >
+          <i class="fab fa-twitter contact-me-btn"></i> Twitter
+        </a>
+      </div>
+    </section>
+    <footer id="footer">
+      <p>© Copyright 2021 Assistant</p>
+    </footer>
+  </body>
 </html>
